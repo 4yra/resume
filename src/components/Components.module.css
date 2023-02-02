@@ -1,0 +1,62 @@
+a {
+    /* color: rgb(255, 229, 81); */
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    display: inline-flex;
+    text-align: center;
+    color: var(--text);
+  }
+a {
+  font-size: 0.8rem;
+}
+
+p {
+  margin: 0;
+}
+
+
+
+nav {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 100vw;
+  padding: 0 0 5px 0;
+  height: fit-content;
+  left: 0; right: 0;
+  bottom: 0;
+  background-color: var(--gbc);
+  box-shadow: 0px 0px 10px #0000005d ;
+  filter: drop-shadow(2px 4px 6px rgba(255, 255, 255, 0.684));
+  background-color: hsla(0, 0%, 0%, 0.789); 
+  backdrop-filter: blur(4px);
+}
+nav a {
+  color:#F5C400;
+}
+
+
+li {
+  margin-top: -15px
+}
+.skillIcon {
+  font-size: 2.5rem;
+}
+
+.projectComp {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  width: 80vw;
+  max-width: 500px;
+  height: 50px;
+  margin: 0 auto;
+  /* border: solid #a9a9a9 1px; */
+  padding: 20px;
+  background: var(--gbc);
+  /* box-shadow:  2px 2px 10px #bebebe,
+              -2px -2px 10px #ffffff; */
+}
