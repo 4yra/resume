@@ -4,7 +4,6 @@ import { Box } from '@mui/material';
 import { Link} from "react-router-dom";
 import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import { margin } from '@mui/system';
 
 export const ProjectComp = (props) => {
     return (
@@ -23,13 +22,13 @@ export const ProjectComp = (props) => {
                     <p style={{ textAlign:'left'}}>{props.description}</p>
                 </Box>
                 
-                <Link to="https://github.com/4yra">
+                <Link to={props.github}>
                     <div style={{borderRadius: '10px', border:'solid black 1px', width: '60px', height:'50px', paddingTop:'10px'}}>
                         <GitHubIcon />
                         <p>Code</p>
                     </div>
                 </Link>
-                <Link to="https://github.com/4yra">
+                <Link to={props.launch}>
                     <div style={{borderRadius: '10px', border:'solid black 1px', width: '60px', height:'50px', paddingTop:'10px'}}>
                         <RocketLaunchIcon />
                         <p>Launch</p>

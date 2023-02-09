@@ -10,25 +10,28 @@ const TTTescriptoin = 'Tic Tac Toe'
 export const Portfolio = () => {
     return (
         <>
-            <ProjectComp 
+            {/* <ProjectComp 
                 title={'Arithemtic'} 
                 description={arithemticDescriptoin} 
                 icon={<CalculateIcon style={{fontSize: '1.8rem'}}/>}
-                projectPage={'https://github.com/4yra'}
-            />
+                github={'https://book-club-sandbox.netlify.app/'}
+                launch={'https://book-club-sandbox.netlify.app/'}
+            /> */}
             <hr style={{width:'50%', margin:'20px auto'}}/>
             <ProjectComp 
-                title={'Audio Book Club'} 
+                title={'Book Club'} 
                 description={ABCDescriptoin} 
                 icon={<MenuBookIcon style={{fontSize: '1.8rem'}}/>}
-                projectPage={'https://github.com/4yra'}
+                github={'https://github.com/4yra/Book-Club'}
+                launch={'https://book-club-sandbox.netlify.app/'}
             />
             <hr style={{width:'50%', margin:'20px auto'}}/>
             <ProjectComp 
                 title={'Tic Tac Toe'} 
                 description={TTTescriptoin} 
                 icon={<MenuBookIcon style={{fontSize: '1.8rem'}}/>}
-                projectPage={'https://github.com/4yra'}
+                github={'https://github.com/4yra/tic-tac-toe'}
+                launch={'https://ttt-lets-go.netlify.app/'}
             />
         </> 
     )
