@@ -22,7 +22,10 @@ export const Skills = () => {
                     <SkillBAr title={'Solidity'} skillIcon={<BatteryCharging20Icon style={style}/>}/>
                 </div>
                 <p style={{textAlign:'left', width:'90%', margin:'8px auto'}}>
-                    Python and Javascrip is where i've written most lines of code while studying data scinece but i also breefly expoloring interaction design before that. Currently im learning React, Firebase and Solidity to add to the fullstack.
+                <b>Python</b>for datas analysis, machine learning and backend structures. 
+                    <br/> <b>JavaScript</b> for user experincce and web desing. 
+                    <br/> <b>Solidity</b> for blockchain development.
+
                 </p>
             </Stack>
         </div>

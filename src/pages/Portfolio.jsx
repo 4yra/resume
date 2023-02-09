@@ -3,8 +3,8 @@ import CalculateIcon from '@mui/icons-material/Calculate';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
 
 const arithemticDescriptoin = 'Elementary mathematics game'
-const ABCDescriptoin = 'A social platform for managing book clubs'
-const TTTescriptoin = 'Tic Tac Toe'
+const ABCDescriptoin = 'A social platform for hosting book clubs'
+const TTTescriptoin = 'Learn fundamental skills with interactive tools'
 
 
 export const Portfolio = () => {
@@ -17,7 +17,7 @@ export const Portfolio = () => {
                 github={'https://book-club-sandbox.netlify.app/'}
                 launch={'https://book-club-sandbox.netlify.app/'}
             /> */}
-            <hr style={{width:'50%', margin:'20px auto'}}/>
+            {/* <hr style={{width:'50%', margin:'20px auto'}}/> */}
             <ProjectComp 
                 title={'Book Club'} 
                 description={ABCDescriptoin} 
@@ -25,14 +25,14 @@ export const Portfolio = () => {
                 github={'https://github.com/4yra/Book-Club'}
                 launch={'https://book-club-sandbox.netlify.app/'}
             />
-            <hr style={{width:'50%', margin:'20px auto'}}/>
-            <ProjectComp 
-                title={'Tic Tac Toe'} 
+            {/* <hr style={{width:'50%', margin:'20px auto'}}/> */}
+            {/* <ProjectComp 
+                title={'Funadmentas'} 
                 description={TTTescriptoin} 
                 icon={<MenuBookIcon style={{fontSize: '1.8rem'}}/>}
                 github={'https://github.com/4yra/tic-tac-toe'}
                 launch={'https://ttt-lets-go.netlify.app/'}
-            />
+            /> */}
         </> 
     )
 }
