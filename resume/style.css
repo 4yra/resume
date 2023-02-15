@@ -1,0 +1,59 @@
+#resumeDIV {
+    margin: 4vh auto; 
+    max-width: 600px; 
+    width: 90vw
+}
+
+.header {
+    margin: 0 auto; 
+    width: fit-content; 
+    display: flex; 
+    align-items: center;
+}
+
+.profilePic {
+    width: 170px; 
+    height: auto; 
+    border-radius: 50%; 
+    box-shadow: 0px 0px 10px #36363669; 
+    background-color: #F5C400
+}
+
+.experienceList{
+    margin-top: 10px;
+}
+
+.experienceList p {
+    margin: 4px;
+}
+
+hr {
+    margin: 10px 0 20px 0
+}
+
+.syntax {
+    text-align: center; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.syntaxItems {
+    margin: 0 10px 0 10px;
+}
+
+.syntaxItems p {
+    font-size: 0.8rem; 
+    margin: 0;
+}
+
+.syntaxItems img {
+    width: 50px;
+    height: auto;
+}
+
+.porfolioContact {
+    display: flex;
+    align-items:baseline;
+    justify-content:space-between;
+}
