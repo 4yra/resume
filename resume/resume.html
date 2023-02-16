@@ -6,16 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Resume</title>
         <link rel="stylesheet" href="./style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/c706162be2.js" crossorigin="anonymous"></script>
-        <script src=
-        "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-           </script>
-           <script src=
-       "https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js">
-           </script>
-           <script src=
-        "https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js">
-           </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     </head>
 <body >
     <div id="resumeDIV">
@@ -23,9 +18,9 @@
             <div style="width: 130px">
                 <img class="profilePic" src="./static/ProfilePic.png" alt="" />
             </div>
-            <div style="margin-left: 100px;">
-                <h2 style="text-align: left; margin: 0 0 5px 0">Karl-Fredrik Hagman</h2>
-                <h4>Full-stack developer</h4>
+            <div style="margin-left: 70px; text-align: center;">
+                <h2 style="text-align: left; margin: 0 0 5px 0; letter-spacing: 4px;">Karl-Fredrik  Hagman</h2>
+                <h4 style="letter-spacing: 4px;">Blockchain - Web - AI</h4>
             </div>
         </div >
 
@@ -34,20 +29,33 @@
             <p>2018 - Started programming</p>
             <p>2020 - 2021 Interaction Desing Malmö university (SWE)</p>
             <p>2021 - 2023 Data science Malmö Higher Vocational Education</p>
-            <p>2023 - Pursuing a cearer in Blockchain, Web development and AI</p>
+            <p>2023 - Pursuing a cearer in Blockchain, Web and AI</p>
         </ul>
         <br />
         
+       
         <hr />
-        <h2>Syntax</h2>
+        <h2>Stack</h2>
         <div class="syntax">
             <div class="syntaxItems">
                 <img src="./static/python.png" alt="">
                 <p>Python</p>
             </div>
             <div class="syntaxItems">
+                <img src="./static/tensorflow.png" alt="">
+                <p>Tensorflow</p>
+            </div>
+            <div class="syntaxItems">
+                <img src="./static/solidity.png" alt="">
+                <p>Solidity</p>
+            </div>
+            <div class="syntaxItems">
                 <img src="./static/JS.png" alt="">
                 <p>Javascript</p>
+            </div>
+            <div class="syntaxItems">
+                <img src="./static/firebase.png" alt="">
+                <p>Firebase</p>
             </div>
             <div class="syntaxItems">
                 <img src="./static/react.png" alt="">
@@ -66,37 +74,41 @@
         <div class="porfolioContact">
             <div style="width: 300px">
                 <h2>Portfolio</h2>
-
+                <p>www.undrwolf.com</p>
+                <p>Book Club</p>
+                <!-- <p>Fundamentals</p> -->
             </div>
             
 
             <div style="width: 300px; border-left: 2px;">
-                <h2>Online</h2>
-                <p>www.undrwolf.com</p>
+                <h2>Contact</h2>
                 <p>fredde.hagman@gmail.com</p>
-
+                <p>Or LinkedIn</p>
             </div>
         </div>
-        
-        
     </div>
-    <!-- <button id="download-pdf">Download as PDF</button>  -->
-    <input  type="button" value="Create PDF"               
-    onclick="convertHTMLtoPDF()">
+    <div style="width: fit-content; margin: 0 auto; position: absolute; bottom: 40px; left: 0; right: 0;">
+        <input style="width: 300px; border-radius: 15px; background-color: #F5C400; padding: 4px;"  type="button" value="Download as PDF"               
+        onclick="convertHTMLtoPDF()">
+    </div>
 </body>
 <script type="text/javascript">
         function convertHTMLtoPDF() {
             const { jsPDF } = window.jspdf;
  
-            var doc = new jsPDF('l', 'mm', [1500, 1400]);
+            var doc = new jsPDF({
+                orientation: 'p', // landscape
+                unit: 'mm', // points, pixels won't work properly
+                format: [612, 792]
+            });
             var pdfjs = document.querySelector('#resumeDIV');
  
             doc.html(pdfjs, {
                 callback: function(doc) {
-                    doc.save("newpdf.pdf");
+                    doc.save("Karl-Fredrik Hagman.pdf");
                 },
-                x: 12,
-                y: 12
+                x: 24,
+                y: 0
             });               
         }       
 </script>  

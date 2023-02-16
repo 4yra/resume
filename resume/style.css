@@ -1,3 +1,7 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 #resumeDIV {
     margin: 4vh auto; 
     max-width: 600px; 
@@ -28,7 +32,8 @@
 }
 
 hr {
-    margin: 10px 0 20px 0
+    width: 90%;
+    margin: 20px auto 20px auto
 }
 
 .syntax {
@@ -48,7 +53,7 @@ hr {
 }
 
 .syntaxItems img {
-    width: 50px;
+    width: 40px;
     height: auto;
 }
 
